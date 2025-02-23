@@ -1,0 +1,88 @@
+/* Full-screen background with gradient */
+.register-page {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* Updated gradient background with cool colors */
+  flex-direction: row; /* Ensure image and form align properly */
+  gap: 30px; /* Add spacing between image and form */
+  padding: 20px;
+}
+
+/* Glassmorphism effect for register form */
+.register-form {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Add a slight border for distinction */
+}
+
+/* Title Styling */
+.register-form h2 {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #444444; /* Dark grey for contrast */
+  font-family: "Poppins", sans-serif;
+}
+.register-image img {
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+  object-fit: cover;
+}
+
+/* Form Labels */
+.register-form .ant-form-item-label label {
+  color: #444444 !important; /* Match title color for consistency */
+  font-weight: 500;
+}
+
+/* Input Fields */
+.register-form input {
+  background: rgba(255, 255, 255, 0.4) !important; /* Slightly opaque for clarity */
+  border: 1px solid #cccccc !important; /* Light grey border for minimalistic design */
+  color: #333333 !important; /* Dark grey text color */
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* Input Focus */
+.register-form input:focus {
+  border: 1px solid rgba(255, 255, 255, 0.6) !important;
+  color: #333333 !important;
+}
+
+/* Register Button */
+.register-form button {
+  background-color: #007bff; /* Bold blue for modern accent */
+  color: white;
+  font-weight: bold;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  transition: 0.3s ease-in-out;
+}
+
+.register-form button:hover {
+  background: #0056b3; /* Slightly darker blue on hover */
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Links */
+.register-form a {
+  color: #007bff !important; /* Match button color */
+  text-decoration: none;
+}
+
+.register-form a:hover {
+  color: #0056b3 !important; /* Match hover color */
+}
